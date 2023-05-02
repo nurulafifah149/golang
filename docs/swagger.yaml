@@ -1,0 +1,157 @@
+definitions:
+  model.BookCreateRequest:
+    properties:
+      author:
+        type: string
+      desc:
+        type: string
+      title:
+        type: string
+    required:
+    - author
+    - desc
+    - title
+    type: object
+  model.BookResponse:
+    properties:
+      author:
+        type: string
+      desc:
+        type: string
+      id:
+        type: integer
+      title:
+        type: string
+    type: object
+  model.WebResponse:
+    properties:
+      data: {}
+      message:
+        type: string
+    type: object
+info:
+  contact: {}
+paths:
+  /book:
+    get:
+      consumes:
+      - application/json
+      description: Get all data Book
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: desc
+          schema:
+            allOf:
+            - $ref: '#/definitions/model.WebResponse'
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/model.BookResponse'
+                  type: array
+              type: object
+      summary: Book
+      tags:
+      - Books
+    post:
+      consumes:
+      - application/json
+      description: Get all data Book
+      parameters:
+      - description: Input Data Buku
+        in: body
+        name: request
+        required: true
+        schema:
+          $ref: '#/definitions/model.BookCreateRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: desc
+          schema:
+            allOf:
+            - $ref: '#/definitions/model.WebResponse'
+            - properties:
+                data:
+                  $ref: '#/definitions/model.BookResponse'
+              type: object
+      summary: Book
+      tags:
+      - Books
+  /book/{id}:
+    delete:
+      consumes:
+      - application/json
+      description: Delete data Book By Id
+      parameters:
+      - description: Delete book by id
+        in: path
+        name: id
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: desc
+          schema:
+            $ref: '#/definitions/model.WebResponse'
+      summary: Book
+      tags:
+      - Books
+    get:
+      consumes:
+      - application/json
+      description: Get data Book
+      parameters:
+      - description: book search by id
+        in: path
+        name: id
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Sukses Mengambil data Buku
+          schema:
+            allOf:
+            - $ref: '#/definitions/model.WebResponse'
+            - properties:
+                data:
+                  $ref: '#/definitions/model.BookResponse'
+              type: object
+      summary: Book
+      tags:
+      - Books
+    put:
+      consumes:
+      - application/json
+      description: Get data Book
+      parameters:
+      - description: book update by id
+        in: path
+        name: id
+        type: integer
+      - description: Input Data Buku
+        in: body
+        name: request
+        required: true
+        schema:
+          $ref: '#/definitions/model.BookCreateRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Sukses Mengambil data Buku
+          schema:
+            allOf:
+            - $ref: '#/definitions/model.WebResponse'
+            - properties:
+                data:
+                  $ref: '#/definitions/model.BookResponse'
+              type: object
+      summary: Book
+      tags:
+      - Books
+swagger: "2.0"
