@@ -1,0 +1,598 @@
+{"Process":"UserHandler - Register","level":"info","msg":"User Handler Invoked","time":"2023-04-24T22:26:29+07:00"}
+{"Process":"UserHandler - Register","level":"info","msg":"Binding JSON data","time":"2023-04-24T22:26:29+07:00"}
+{"Process":"UserHandler - Register","level":"info","msg":"Hit User Service","time":"2023-04-24T22:26:29+07:00"}
+{"Process":"UserService - CreateUser","level":"info","msg":"User Service Invoked","time":"2023-04-24T22:26:29+07:00"}
+{"Process":"UserService - CreateUser","level":"info","msg":"Parse Data from Request to Model","time":"2023-04-24T22:26:29+07:00"}
+{"Process":"UserService - CreateUser","level":"info","msg":"Validating Process invoked","time":"2023-04-24T22:26:29+07:00"}
+{"Process":"UserService - CreateUser","level":"info","msg":"Hashing Password invoked","time":"2023-04-24T22:26:29+07:00"}
+{"Process":"UserService - CreateUser","level":"info","msg":"Hit UserRepository.Create ","time":"2023-04-24T22:26:29+07:00"}
+{"Process":"UserHandler - Register","level":"info","msg":"rendering response User Service","time":"2023-04-24T22:26:29+07:00"}
+{"Process":"UserHandler - Register","level":"info","msg":"User Service Success","time":"2023-04-24T22:26:29+07:00"}
+{"Process":"UserHandler - Login","level":"info","msg":"User Handler Invoked","time":"2023-04-24T22:27:15+07:00"}
+{"Process":"UserHandler - Login","level":"info","msg":"Binding JSON data","time":"2023-04-24T22:27:15+07:00"}
+{"Process":"UserHandler - Register","level":"info","msg":"Hit User Service","time":"2023-04-24T22:27:15+07:00"}
+{"Process":"UserService - AuthenticateUser","level":"info","msg":"User Service Invoked","time":"2023-04-24T22:27:15+07:00"}
+{"Process":"UserService - AuthenticateUser","level":"info","msg":"Hit Repository to Get user by username","time":"2023-04-24T22:27:15+07:00"}
+{"Process":"UserService - AuthenticateUser","level":"info","msg":"Comparing Password","time":"2023-04-24T22:27:15+07:00"}
+{"Process":"UserService - AuthenticateUser","level":"info","msg":"Generating Token","time":"2023-04-24T22:27:15+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Generate JWT Invoked","time":"2023-04-24T22:27:15+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Generate Default Claim","time":"2023-04-24T22:27:15+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Generate ID Claim","time":"2023-04-24T22:27:15+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Generate Id Token","time":"2023-04-24T22:27:15+07:00"}
+{"Process":"UserHandler - Register","level":"info","msg":"rendering response User Service","time":"2023-04-24T22:27:15+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"Middleware Invoked","time":"2023-04-24T22:33:57+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"GET TOKEN FROM REQUEST HEADER","time":"2023-04-24T22:33:57+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Verify and Parse Claim","time":"2023-04-24T22:33:57+07:00"}
+{"Process":"ProductHandler - Create","level":"info","msg":"Photo Handler Invoked","time":"2023-04-24T22:33:57+07:00"}
+{"Process":"ProductHandler - Create","level":"info","msg":"GET PHOTO DATA FROM JSON","time":"2023-04-24T22:33:57+07:00"}
+{"Process":"ProductHandler - Create","level":"info","msg":"GET USERDATA FROM CTX","time":"2023-04-24T22:33:57+07:00"}
+{"Process":"ProductHandler - Create","level":"info","msg":"HIT PHOTO SERVICE","time":"2023-04-24T22:33:57+07:00"}
+{"Process":"ProductService - Create","level":"info","msg":"Product Service Invoked","time":"2023-04-24T22:33:57+07:00"}
+{"Process":"ProductService - Create","level":"info","msg":"Validating Process invoked","time":"2023-04-24T22:33:57+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"Middleware Invoked","time":"2023-04-24T22:34:51+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"GET TOKEN FROM REQUEST HEADER","time":"2023-04-24T22:34:51+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Verify and Parse Claim","time":"2023-04-24T22:34:51+07:00"}
+{"Process":"ProductService - GetById","level":"info","msg":"Product Service Invoked","time":"2023-04-24T22:34:51+07:00"}
+{"Process":"ProductService - GetById","error msg":"Comments: unsupported relations for schema Product","level":"error","msg":"Repository Returning Error","time":"2023-04-24T22:34:51+07:00"}
+{"Process":"ProductHandler - GetById","error msg":"Comments: unsupported relations for schema Product","level":"error","msg":"Error When Hit Photo Service","time":"2023-04-24T22:34:51+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"Middleware Invoked","time":"2023-04-24T22:35:13+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"GET TOKEN FROM REQUEST HEADER","time":"2023-04-24T22:35:13+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Verify and Parse Claim","time":"2023-04-24T22:35:13+07:00"}
+{"Process":"ProductService - GetById","level":"info","msg":"Product Service Invoked","time":"2023-04-24T22:35:13+07:00"}
+{"Process":"ProductService - GetById","error msg":"Comments: unsupported relations for schema Product","level":"error","msg":"Repository Returning Error","time":"2023-04-24T22:35:13+07:00"}
+{"Process":"ProductHandler - GetById","error msg":"Comments: unsupported relations for schema Product","level":"error","msg":"Error When Hit Photo Service","time":"2023-04-24T22:35:13+07:00"}
+{"Process":"UserHandler - Login","level":"info","msg":"User Handler Invoked","time":"2023-04-24T22:36:38+07:00"}
+{"Process":"UserHandler - Login","level":"info","msg":"Binding JSON data","time":"2023-04-24T22:36:38+07:00"}
+{"Process":"UserHandler - Register","level":"info","msg":"Hit User Service","time":"2023-04-24T22:36:38+07:00"}
+{"Process":"UserService - AuthenticateUser","level":"info","msg":"User Service Invoked","time":"2023-04-24T22:36:38+07:00"}
+{"Process":"UserService - AuthenticateUser","level":"info","msg":"Hit Repository to Get user by username","time":"2023-04-24T22:36:38+07:00"}
+{"Process":"UserService - AuthenticateUser","level":"info","msg":"Comparing Password","time":"2023-04-24T22:36:38+07:00"}
+{"Process":"UserService - AuthenticateUser","level":"info","msg":"Generating Token","time":"2023-04-24T22:36:38+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Generate JWT Invoked","time":"2023-04-24T22:36:38+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Generate Default Claim","time":"2023-04-24T22:36:38+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Generate ID Claim","time":"2023-04-24T22:36:38+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Generate Id Token","time":"2023-04-24T22:36:38+07:00"}
+{"Process":"UserHandler - Register","level":"info","msg":"rendering response User Service","time":"2023-04-24T22:36:38+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"Middleware Invoked","time":"2023-04-24T22:36:59+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"GET TOKEN FROM REQUEST HEADER","time":"2023-04-24T22:36:59+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Verify and Parse Claim","time":"2023-04-24T22:36:59+07:00"}
+{"Process":"ProductService - GetById","level":"info","msg":"Product Service Invoked","time":"2023-04-24T22:36:59+07:00"}
+{"Process":"ProductHandler - GetById","level":"info","msg":"Photo Handler Invoked","time":"2023-04-24T22:36:59+07:00"}
+{"Process":"ProductService - GetById","level":"info","msg":"Product Service Invoked","time":"2023-04-24T22:36:59+07:00"}
+{"Process":"ProductHandler - GetById","level":"info","msg":"Render Response","time":"2023-04-24T22:36:59+07:00"}
+{"Process":"UserHandler - Register","level":"info","msg":"User Handler Invoked","time":"2023-04-24T22:37:43+07:00"}
+{"Process":"UserHandler - Register","level":"info","msg":"Binding JSON data","time":"2023-04-24T22:37:43+07:00"}
+{"Process":"UserHandler - Register","level":"info","msg":"Hit User Service","time":"2023-04-24T22:37:43+07:00"}
+{"Process":"UserService - CreateUser","level":"info","msg":"User Service Invoked","time":"2023-04-24T22:37:43+07:00"}
+{"Process":"UserService - CreateUser","level":"info","msg":"Parse Data from Request to Model","time":"2023-04-24T22:37:43+07:00"}
+{"Process":"UserService - CreateUser","level":"info","msg":"Validating Process invoked","time":"2023-04-24T22:37:43+07:00"}
+{"Process":"UserService - CreateUser","level":"info","msg":"Hashing Password invoked","time":"2023-04-24T22:37:43+07:00"}
+{"Process":"UserService - CreateUser","level":"info","msg":"Hit UserRepository.Create ","time":"2023-04-24T22:37:43+07:00"}
+{"Process":"UserHandler - Register","level":"info","msg":"rendering response User Service","time":"2023-04-24T22:37:43+07:00"}
+{"Process":"UserHandler - Register","level":"info","msg":"User Service Success","time":"2023-04-24T22:37:43+07:00"}
+{"Process":"UserHandler - Login","level":"info","msg":"User Handler Invoked","time":"2023-04-24T22:37:58+07:00"}
+{"Process":"UserHandler - Login","level":"info","msg":"Binding JSON data","time":"2023-04-24T22:37:58+07:00"}
+{"Process":"UserHandler - Register","level":"info","msg":"Hit User Service","time":"2023-04-24T22:37:58+07:00"}
+{"Process":"UserService - AuthenticateUser","level":"info","msg":"User Service Invoked","time":"2023-04-24T22:37:58+07:00"}
+{"Process":"UserService - AuthenticateUser","level":"info","msg":"Hit Repository to Get user by username","time":"2023-04-24T22:37:58+07:00"}
+{"Process":"UserService - AuthenticateUser","level":"info","msg":"Comparing Password","time":"2023-04-24T22:37:58+07:00"}
+{"Process":"UserService - AuthenticateUser","level":"info","msg":"Generating Token","time":"2023-04-24T22:37:58+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Generate JWT Invoked","time":"2023-04-24T22:37:58+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Generate Default Claim","time":"2023-04-24T22:37:58+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Generate ID Claim","time":"2023-04-24T22:37:58+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Generate Id Token","time":"2023-04-24T22:37:58+07:00"}
+{"Process":"UserHandler - Register","level":"info","msg":"rendering response User Service","time":"2023-04-24T22:37:58+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"Middleware Invoked","time":"2023-04-24T22:38:16+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"GET TOKEN FROM REQUEST HEADER","time":"2023-04-24T22:38:16+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Verify and Parse Claim","time":"2023-04-24T22:38:16+07:00"}
+{"Process":"ProductService - GetById","level":"info","msg":"Product Service Invoked","time":"2023-04-24T22:38:16+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"Middleware Invoked","time":"2023-04-24T22:38:44+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"GET TOKEN FROM REQUEST HEADER","time":"2023-04-24T22:38:44+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Verify and Parse Claim","time":"2023-04-24T22:38:44+07:00"}
+{"Process":"ProductHandler - Create","level":"info","msg":"Photo Handler Invoked","time":"2023-04-24T22:38:44+07:00"}
+{"Process":"ProductHandler - Create","level":"info","msg":"GET PHOTO DATA FROM JSON","time":"2023-04-24T22:38:44+07:00"}
+{"Process":"ProductHandler - Create","level":"info","msg":"GET USERDATA FROM CTX","time":"2023-04-24T22:38:44+07:00"}
+{"Process":"ProductHandler - Create","level":"info","msg":"HIT PHOTO SERVICE","time":"2023-04-24T22:38:44+07:00"}
+{"Process":"ProductService - Create","level":"info","msg":"Product Service Invoked","time":"2023-04-24T22:38:44+07:00"}
+{"Process":"ProductService - Create","level":"info","msg":"Validating Process invoked","time":"2023-04-24T22:38:44+07:00"}
+{"Process":"UserHandler - Login","level":"info","msg":"User Handler Invoked","time":"2023-04-24T22:38:58+07:00"}
+{"Process":"UserHandler - Login","level":"info","msg":"Binding JSON data","time":"2023-04-24T22:38:58+07:00"}
+{"Process":"UserHandler - Register","level":"info","msg":"Hit User Service","time":"2023-04-24T22:38:58+07:00"}
+{"Process":"UserService - AuthenticateUser","level":"info","msg":"User Service Invoked","time":"2023-04-24T22:38:58+07:00"}
+{"Process":"UserService - AuthenticateUser","level":"info","msg":"Hit Repository to Get user by username","time":"2023-04-24T22:38:58+07:00"}
+{"Process":"UserService - AuthenticateUser","level":"info","msg":"Comparing Password","time":"2023-04-24T22:38:58+07:00"}
+{"Process":"UserService - AuthenticateUser","level":"info","msg":"Generating Token","time":"2023-04-24T22:38:58+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Generate JWT Invoked","time":"2023-04-24T22:38:58+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Generate Default Claim","time":"2023-04-24T22:38:58+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Generate ID Claim","time":"2023-04-24T22:38:58+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Generate Id Token","time":"2023-04-24T22:38:58+07:00"}
+{"Process":"UserHandler - Register","level":"info","msg":"rendering response User Service","time":"2023-04-24T22:38:58+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"Middleware Invoked","time":"2023-04-24T22:39:23+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"GET TOKEN FROM REQUEST HEADER","time":"2023-04-24T22:39:23+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Verify and Parse Claim","time":"2023-04-24T22:39:23+07:00"}
+{"Process":"ProductService - GetById","level":"info","msg":"Product Service Invoked","time":"2023-04-24T22:39:23+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"Middleware Invoked","time":"2023-04-24T22:43:49+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"GET TOKEN FROM REQUEST HEADER","time":"2023-04-24T22:43:49+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Verify and Parse Claim","time":"2023-04-24T22:43:49+07:00"}
+{"Process":"ProductService - GetById","level":"info","msg":"Product Service Invoked","time":"2023-04-24T22:43:49+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"Middleware Invoked","time":"2023-04-24T22:43:52+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"GET TOKEN FROM REQUEST HEADER","time":"2023-04-24T22:43:52+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Verify and Parse Claim","time":"2023-04-24T22:43:52+07:00"}
+{"Process":"ProductService - GetById","level":"info","msg":"Product Service Invoked","time":"2023-04-24T22:43:52+07:00"}
+{"Process":"UserHandler - Login","level":"info","msg":"User Handler Invoked","time":"2023-04-24T22:44:18+07:00"}
+{"Process":"UserHandler - Login","level":"info","msg":"Binding JSON data","time":"2023-04-24T22:44:18+07:00"}
+{"Process":"UserHandler - Register","level":"info","msg":"Hit User Service","time":"2023-04-24T22:44:18+07:00"}
+{"Process":"UserService - AuthenticateUser","level":"info","msg":"User Service Invoked","time":"2023-04-24T22:44:18+07:00"}
+{"Process":"UserService - AuthenticateUser","level":"info","msg":"Hit Repository to Get user by username","time":"2023-04-24T22:44:18+07:00"}
+{"Process":"UserService - AuthenticateUser","level":"info","msg":"Comparing Password","time":"2023-04-24T22:44:18+07:00"}
+{"Process":"UserService - AuthenticateUser","level":"info","msg":"Generating Token","time":"2023-04-24T22:44:18+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Generate JWT Invoked","time":"2023-04-24T22:44:18+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Generate Default Claim","time":"2023-04-24T22:44:18+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Generate ID Claim","time":"2023-04-24T22:44:18+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Generate Id Token","time":"2023-04-24T22:44:18+07:00"}
+{"Process":"UserHandler - Register","level":"info","msg":"rendering response User Service","time":"2023-04-24T22:44:18+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"Middleware Invoked","time":"2023-04-24T22:44:35+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"GET TOKEN FROM REQUEST HEADER","time":"2023-04-24T22:44:35+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Verify and Parse Claim","time":"2023-04-24T22:44:35+07:00"}
+{"Process":"ProductService - GetById","level":"info","msg":"Product Service Invoked","time":"2023-04-24T22:44:35+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"Middleware Invoked","time":"2023-04-24T22:45:42+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"GET TOKEN FROM REQUEST HEADER","time":"2023-04-24T22:45:42+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Verify and Parse Claim","time":"2023-04-24T22:45:42+07:00"}
+{"Process":"ProductService - GetById","level":"info","msg":"Product Service Invoked","time":"2023-04-24T22:45:42+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"Middleware Invoked","time":"2023-04-24T22:45:46+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"GET TOKEN FROM REQUEST HEADER","time":"2023-04-24T22:45:46+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Verify and Parse Claim","time":"2023-04-24T22:45:46+07:00"}
+{"Process":"ProductService - GetById","level":"info","msg":"Product Service Invoked","time":"2023-04-24T22:45:46+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"Middleware Invoked","time":"2023-04-24T22:45:49+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"GET TOKEN FROM REQUEST HEADER","time":"2023-04-24T22:45:49+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Verify and Parse Claim","time":"2023-04-24T22:45:49+07:00"}
+{"Process":"ProductService - GetById","level":"info","msg":"Product Service Invoked","time":"2023-04-24T22:45:49+07:00"}
+{"Process":"ProductHandler - GetById","level":"info","msg":"Photo Handler Invoked","time":"2023-04-24T22:45:49+07:00"}
+{"Process":"ProductService - GetById","level":"info","msg":"Product Service Invoked","time":"2023-04-24T22:45:49+07:00"}
+{"Process":"ProductHandler - GetById","level":"info","msg":"Render Response","time":"2023-04-24T22:45:49+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"Middleware Invoked","time":"2023-04-24T22:45:55+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"GET TOKEN FROM REQUEST HEADER","time":"2023-04-24T22:45:55+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Verify and Parse Claim","time":"2023-04-24T22:45:55+07:00"}
+{"Process":"ProductService - GetById","level":"info","msg":"Product Service Invoked","time":"2023-04-24T22:45:55+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"Middleware Invoked","time":"2023-04-24T22:47:22+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"GET TOKEN FROM REQUEST HEADER","time":"2023-04-24T22:47:22+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Verify and Parse Claim","time":"2023-04-24T22:47:22+07:00"}
+{"Process":"ProductService - GetById","level":"info","msg":"Product Service Invoked","time":"2023-04-24T22:47:23+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"Middleware Invoked","time":"2023-04-24T22:47:26+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"GET TOKEN FROM REQUEST HEADER","time":"2023-04-24T22:47:26+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Verify and Parse Claim","time":"2023-04-24T22:47:26+07:00"}
+{"Process":"ProductService - GetById","level":"info","msg":"Product Service Invoked","time":"2023-04-24T22:47:26+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"Middleware Invoked","time":"2023-04-24T22:47:27+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"GET TOKEN FROM REQUEST HEADER","time":"2023-04-24T22:47:27+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Verify and Parse Claim","time":"2023-04-24T22:47:27+07:00"}
+{"Process":"ProductService - GetById","level":"info","msg":"Product Service Invoked","time":"2023-04-24T22:47:27+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"Middleware Invoked","time":"2023-04-24T22:47:27+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"GET TOKEN FROM REQUEST HEADER","time":"2023-04-24T22:47:27+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Verify and Parse Claim","time":"2023-04-24T22:47:27+07:00"}
+{"Process":"ProductService - GetById","level":"info","msg":"Product Service Invoked","time":"2023-04-24T22:47:27+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"Middleware Invoked","time":"2023-04-24T22:47:27+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"GET TOKEN FROM REQUEST HEADER","time":"2023-04-24T22:47:27+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Verify and Parse Claim","time":"2023-04-24T22:47:27+07:00"}
+{"Process":"ProductService - GetById","level":"info","msg":"Product Service Invoked","time":"2023-04-24T22:47:28+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"Middleware Invoked","time":"2023-04-24T22:48:31+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"GET TOKEN FROM REQUEST HEADER","time":"2023-04-24T22:48:31+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Verify and Parse Claim","time":"2023-04-24T22:48:31+07:00"}
+{"Process":"ProductService - GetById","level":"info","msg":"Product Service Invoked","time":"2023-04-24T22:48:31+07:00"}
+{"Process":"ProductHandler - GetById","level":"info","msg":"Photo Handler Invoked","time":"2023-04-24T22:48:31+07:00"}
+{"Process":"ProductService - GetById","level":"info","msg":"Product Service Invoked","time":"2023-04-24T22:48:31+07:00"}
+{"Process":"ProductHandler - GetById","level":"info","msg":"Render Response","time":"2023-04-24T22:48:31+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"Middleware Invoked","time":"2023-04-24T22:48:37+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"GET TOKEN FROM REQUEST HEADER","time":"2023-04-24T22:48:37+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Verify and Parse Claim","time":"2023-04-24T22:48:37+07:00"}
+{"Process":"ProductService - GetById","level":"info","msg":"Product Service Invoked","time":"2023-04-24T22:48:37+07:00"}
+{"Process":"ProductHandler - GetById","level":"info","msg":"Photo Handler Invoked","time":"2023-04-24T22:48:37+07:00"}
+{"Process":"ProductService - GetById","level":"info","msg":"Product Service Invoked","time":"2023-04-24T22:48:37+07:00"}
+{"Process":"ProductHandler - GetById","level":"info","msg":"Render Response","time":"2023-04-24T22:48:37+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"Middleware Invoked","time":"2023-04-24T22:48:41+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"GET TOKEN FROM REQUEST HEADER","time":"2023-04-24T22:48:41+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Verify and Parse Claim","time":"2023-04-24T22:48:41+07:00"}
+{"Process":"ProductService - GetById","level":"info","msg":"Product Service Invoked","time":"2023-04-24T22:48:42+07:00"}
+{"Process":"ProductHandler - GetById","level":"info","msg":"Photo Handler Invoked","time":"2023-04-24T22:48:42+07:00"}
+{"Process":"ProductService - GetById","level":"info","msg":"Product Service Invoked","time":"2023-04-24T22:48:42+07:00"}
+{"Process":"ProductHandler - GetById","level":"info","msg":"Render Response","time":"2023-04-24T22:48:42+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"Middleware Invoked","time":"2023-04-24T22:49:09+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"GET TOKEN FROM REQUEST HEADER","time":"2023-04-24T22:49:09+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Verify and Parse Claim","time":"2023-04-24T22:49:09+07:00"}
+{"Process":"ProductService - GetById","level":"info","msg":"Product Service Invoked","time":"2023-04-24T22:49:09+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"Middleware Invoked","time":"2023-04-24T22:50:51+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"GET TOKEN FROM REQUEST HEADER","time":"2023-04-24T22:50:51+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Verify and Parse Claim","time":"2023-04-24T22:50:51+07:00"}
+{"Process":"ProductService - GetById","level":"info","msg":"Product Service Invoked","time":"2023-04-24T22:50:52+07:00"}
+{"Process":"UserHandler - Login","level":"info","msg":"User Handler Invoked","time":"2023-04-24T22:51:34+07:00"}
+{"Process":"UserHandler - Login","level":"info","msg":"Binding JSON data","time":"2023-04-24T22:51:34+07:00"}
+{"Process":"UserHandler - Register","level":"info","msg":"Hit User Service","time":"2023-04-24T22:51:34+07:00"}
+{"Process":"UserService - AuthenticateUser","level":"info","msg":"User Service Invoked","time":"2023-04-24T22:51:34+07:00"}
+{"Process":"UserService - AuthenticateUser","level":"info","msg":"Hit Repository to Get user by username","time":"2023-04-24T22:51:34+07:00"}
+{"Process":"UserService - AuthenticateUser","level":"info","msg":"Comparing Password","time":"2023-04-24T22:51:34+07:00"}
+{"Process":"UserService - AuthenticateUser","level":"info","msg":"Generating Token","time":"2023-04-24T22:51:34+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Generate JWT Invoked","time":"2023-04-24T22:51:34+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Generate Default Claim","time":"2023-04-24T22:51:34+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Generate ID Claim","time":"2023-04-24T22:51:34+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Generate Id Token","time":"2023-04-24T22:51:34+07:00"}
+{"Process":"UserHandler - Register","level":"info","msg":"rendering response User Service","time":"2023-04-24T22:51:34+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"Middleware Invoked","time":"2023-04-24T22:51:55+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"GET TOKEN FROM REQUEST HEADER","time":"2023-04-24T22:51:55+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Verify and Parse Claim","time":"2023-04-24T22:51:55+07:00"}
+{"Process":"ProductService - GetById","level":"info","msg":"Product Service Invoked","time":"2023-04-24T22:51:55+07:00"}
+{"Process":"ProductHandler - GetById","level":"info","msg":"Photo Handler Invoked","time":"2023-04-24T22:51:55+07:00"}
+{"Process":"ProductService - GetById","level":"info","msg":"Product Service Invoked","time":"2023-04-24T22:51:55+07:00"}
+{"Process":"ProductHandler - GetById","level":"info","msg":"Render Response","time":"2023-04-24T22:51:55+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"Middleware Invoked","time":"2023-04-24T22:52:20+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"GET TOKEN FROM REQUEST HEADER","time":"2023-04-24T22:52:20+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Verify and Parse Claim","time":"2023-04-24T22:52:20+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"Middleware Invoked","time":"2023-04-24T22:54:04+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"GET TOKEN FROM REQUEST HEADER","time":"2023-04-24T22:54:04+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Verify and Parse Claim","time":"2023-04-24T22:54:04+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"Middleware Invoked","time":"2023-04-24T22:54:17+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"GET TOKEN FROM REQUEST HEADER","time":"2023-04-24T22:54:17+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Verify and Parse Claim","time":"2023-04-24T22:54:17+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"Middleware Invoked","time":"2023-04-24T22:56:06+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"GET TOKEN FROM REQUEST HEADER","time":"2023-04-24T22:56:06+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Verify and Parse Claim","time":"2023-04-24T22:56:06+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"Middleware Invoked","time":"2023-04-24T22:56:09+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"GET TOKEN FROM REQUEST HEADER","time":"2023-04-24T22:56:09+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Verify and Parse Claim","time":"2023-04-24T22:56:09+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"Middleware Invoked","time":"2023-04-24T22:56:15+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"GET TOKEN FROM REQUEST HEADER","time":"2023-04-24T22:56:15+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Verify and Parse Claim","time":"2023-04-24T22:56:15+07:00"}
+{"Process":"ProductService - GetById","level":"info","msg":"Product Service Invoked","time":"2023-04-24T22:56:16+07:00"}
+{"Process":"UserHandler - Login","level":"info","msg":"User Handler Invoked","time":"2023-04-24T22:59:02+07:00"}
+{"Process":"UserHandler - Login","level":"info","msg":"Binding JSON data","time":"2023-04-24T22:59:02+07:00"}
+{"Process":"UserHandler - Register","level":"info","msg":"Hit User Service","time":"2023-04-24T22:59:02+07:00"}
+{"Process":"UserService - AuthenticateUser","level":"info","msg":"User Service Invoked","time":"2023-04-24T22:59:02+07:00"}
+{"Process":"UserService - AuthenticateUser","level":"info","msg":"Hit Repository to Get user by username","time":"2023-04-24T22:59:02+07:00"}
+{"Process":"UserService - AuthenticateUser","level":"info","msg":"Comparing Password","time":"2023-04-24T22:59:02+07:00"}
+{"Process":"UserService - AuthenticateUser","level":"info","msg":"Generating Token","time":"2023-04-24T22:59:02+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Generate JWT Invoked","time":"2023-04-24T22:59:02+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Generate Default Claim","time":"2023-04-24T22:59:02+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Generate ID Claim","time":"2023-04-24T22:59:02+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Generate Id Token","time":"2023-04-24T22:59:02+07:00"}
+{"Process":"UserHandler - Register","level":"info","msg":"rendering response User Service","time":"2023-04-24T22:59:02+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"Middleware Invoked","time":"2023-04-24T22:59:53+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"GET TOKEN FROM REQUEST HEADER","time":"2023-04-24T22:59:53+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Verify and Parse Claim","time":"2023-04-24T22:59:53+07:00"}
+{"Process":"ProductService - GetById","level":"info","msg":"Product Service Invoked","time":"2023-04-24T22:59:53+07:00"}
+{"Process":"ProductHandler - GetById","level":"info","msg":"Photo Handler Invoked","time":"2023-04-24T22:59:53+07:00"}
+{"Process":"ProductService - GetById","level":"info","msg":"Product Service Invoked","time":"2023-04-24T22:59:53+07:00"}
+{"Process":"ProductHandler - GetById","level":"info","msg":"Render Response","time":"2023-04-24T22:59:53+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"Middleware Invoked","time":"2023-04-24T22:59:58+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"GET TOKEN FROM REQUEST HEADER","time":"2023-04-24T22:59:58+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Verify and Parse Claim","time":"2023-04-24T22:59:58+07:00"}
+{"Process":"ProductService - GetById","level":"info","msg":"Product Service Invoked","time":"2023-04-24T22:59:58+07:00"}
+{"Process":"ProductHandler - GetById","level":"info","msg":"Photo Handler Invoked","time":"2023-04-24T22:59:58+07:00"}
+{"Process":"ProductService - GetById","level":"info","msg":"Product Service Invoked","time":"2023-04-24T22:59:58+07:00"}
+{"Process":"ProductHandler - GetById","level":"info","msg":"Render Response","time":"2023-04-24T22:59:58+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"Middleware Invoked","time":"2023-04-24T23:00:04+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"GET TOKEN FROM REQUEST HEADER","time":"2023-04-24T23:00:04+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Verify and Parse Claim","time":"2023-04-24T23:00:04+07:00"}
+{"Process":"ProductHandler - Update","level":"info","msg":"Photo Handler Invoked","time":"2023-04-24T23:00:04+07:00"}
+{"Process":"ProductHandler - Update","level":"info","msg":"GET ID PHOTO FROM PARAMS","time":"2023-04-24T23:00:04+07:00"}
+{"Process":"ProductHandler - Update","level":"info","msg":"GET PHOTO DATA FROM JSON","time":"2023-04-24T23:00:04+07:00"}
+{"Process":"ProductHandler - Update","level":"info","msg":"GET USERDATA FROM CTX","time":"2023-04-24T23:00:04+07:00"}
+{"Process":"ProductHandler - Update","level":"info","msg":"HIT PHOTO SERVICE","time":"2023-04-24T23:00:04+07:00"}
+{"Process":"ProductService - Update","level":"info","msg":"Product Service Invoked","time":"2023-04-24T23:00:04+07:00"}
+{"Process":"ProductService - Update","level":"info","msg":"Autorisasi kepemilikan Product","time":"2023-04-24T23:00:04+07:00"}
+{"Process":"ProductService - Update","error msg":null,"level":"error","msg":"Unauthorized","time":"2023-04-24T23:00:04+07:00"}
+{"Process":"ProductHandler - Update","error msg":"Unauthorized","level":"error","msg":"Error WHEN HIT PHOTO SERVICE","time":"2023-04-24T23:00:04+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"Middleware Invoked","time":"2023-04-24T23:01:25+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"GET TOKEN FROM REQUEST HEADER","time":"2023-04-24T23:01:25+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Verify and Parse Claim","time":"2023-04-24T23:01:25+07:00"}
+{"Process":"ProductHandler - Update","level":"info","msg":"Photo Handler Invoked","time":"2023-04-24T23:01:25+07:00"}
+{"Process":"ProductHandler - Update","level":"info","msg":"GET ID PHOTO FROM PARAMS","time":"2023-04-24T23:01:25+07:00"}
+{"Process":"ProductHandler - Update","level":"info","msg":"GET PHOTO DATA FROM JSON","time":"2023-04-24T23:01:25+07:00"}
+{"Process":"ProductHandler - Update","level":"info","msg":"GET USERDATA FROM CTX","time":"2023-04-24T23:01:25+07:00"}
+{"Process":"ProductHandler - Update","level":"info","msg":"HIT PHOTO SERVICE","time":"2023-04-24T23:01:25+07:00"}
+{"Process":"ProductService - Update","level":"info","msg":"Product Service Invoked","time":"2023-04-24T23:01:25+07:00"}
+{"Process":"ProductService - Update","level":"info","msg":"Autorisasi kepemilikan Product","time":"2023-04-24T23:01:25+07:00"}
+{"Process":"ProductService - Update","error msg":null,"level":"error","msg":"Unauthorized","time":"2023-04-24T23:01:25+07:00"}
+{"Process":"ProductHandler - Update","error msg":"Unauthorized","level":"error","msg":"Error WHEN HIT PHOTO SERVICE","time":"2023-04-24T23:01:25+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"Middleware Invoked","time":"2023-04-24T23:03:03+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"GET TOKEN FROM REQUEST HEADER","time":"2023-04-24T23:03:03+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Verify and Parse Claim","time":"2023-04-24T23:03:03+07:00"}
+{"Process":"ProductHandler - Update","level":"info","msg":"Photo Handler Invoked","time":"2023-04-24T23:03:03+07:00"}
+{"Process":"ProductHandler - Update","level":"info","msg":"GET ID PHOTO FROM PARAMS","time":"2023-04-24T23:03:03+07:00"}
+{"Process":"ProductHandler - Update","level":"info","msg":"GET PHOTO DATA FROM JSON","time":"2023-04-24T23:03:03+07:00"}
+{"Process":"ProductHandler - Update","level":"info","msg":"GET USERDATA FROM CTX","time":"2023-04-24T23:03:03+07:00"}
+{"Process":"ProductHandler - Update","level":"info","msg":"HIT PHOTO SERVICE","time":"2023-04-24T23:03:03+07:00"}
+{"Process":"ProductService - Update","level":"info","msg":"Product Service Invoked","time":"2023-04-24T23:03:03+07:00"}
+{"Process":"ProductService - Update","level":"info","msg":"Autorisasi kepemilikan Product","time":"2023-04-24T23:03:03+07:00"}
+{"Process":"ProductService - Update","error msg":null,"level":"error","msg":"Unauthorized","time":"2023-04-24T23:03:03+07:00"}
+{"Process":"ProductHandler - Update","error msg":"Unauthorized","level":"error","msg":"Error WHEN HIT PHOTO SERVICE","time":"2023-04-24T23:03:03+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"Middleware Invoked","time":"2023-04-24T23:04:18+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"GET TOKEN FROM REQUEST HEADER","time":"2023-04-24T23:04:18+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Verify and Parse Claim","time":"2023-04-24T23:04:18+07:00"}
+{"Process":"ProductHandler - Update","level":"info","msg":"Photo Handler Invoked","time":"2023-04-24T23:04:18+07:00"}
+{"Process":"ProductHandler - Update","level":"info","msg":"GET ID PHOTO FROM PARAMS","time":"2023-04-24T23:04:18+07:00"}
+{"Process":"ProductHandler - Update","level":"info","msg":"GET PHOTO DATA FROM JSON","time":"2023-04-24T23:04:18+07:00"}
+{"Process":"ProductHandler - Update","level":"info","msg":"GET USERDATA FROM CTX","time":"2023-04-24T23:04:18+07:00"}
+{"Process":"ProductHandler - Update","level":"info","msg":"HIT PHOTO SERVICE","time":"2023-04-24T23:04:18+07:00"}
+{"Process":"ProductService - Update","level":"info","msg":"Product Service Invoked","time":"2023-04-24T23:04:18+07:00"}
+{"Process":"ProductService - Update","level":"info","msg":"Autorisasi kepemilikan Product","time":"2023-04-24T23:04:18+07:00"}
+{"Process":"ProductService - Update","level":"info","msg":"Hit Repository For Update Proccess","time":"2023-04-24T23:04:19+07:00"}
+{"Process":"UserHandler - Login","level":"info","msg":"User Handler Invoked","time":"2023-04-24T23:04:41+07:00"}
+{"Process":"UserHandler - Login","level":"info","msg":"Binding JSON data","time":"2023-04-24T23:04:41+07:00"}
+{"Process":"UserHandler - Register","level":"info","msg":"Hit User Service","time":"2023-04-24T23:04:41+07:00"}
+{"Process":"UserService - AuthenticateUser","level":"info","msg":"User Service Invoked","time":"2023-04-24T23:04:41+07:00"}
+{"Process":"UserService - AuthenticateUser","level":"info","msg":"Hit Repository to Get user by username","time":"2023-04-24T23:04:41+07:00"}
+{"Process":"UserService - AuthenticateUser","level":"info","msg":"Comparing Password","time":"2023-04-24T23:04:41+07:00"}
+{"Process":"UserService - AuthenticateUser","level":"info","msg":"Generating Token","time":"2023-04-24T23:04:41+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Generate JWT Invoked","time":"2023-04-24T23:04:41+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Generate Default Claim","time":"2023-04-24T23:04:41+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Generate ID Claim","time":"2023-04-24T23:04:41+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Generate Id Token","time":"2023-04-24T23:04:41+07:00"}
+{"Process":"UserHandler - Register","level":"info","msg":"rendering response User Service","time":"2023-04-24T23:04:41+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"Middleware Invoked","time":"2023-04-24T23:05:15+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"GET TOKEN FROM REQUEST HEADER","time":"2023-04-24T23:05:15+07:00"}
+{"Process":"Middleware - JWTMiddleware","error msg":null,"level":"error","msg":"TOKEN IS NOT FOUND","time":"2023-04-24T23:05:15+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"Middleware Invoked","time":"2023-04-24T23:05:29+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"GET TOKEN FROM REQUEST HEADER","time":"2023-04-24T23:05:29+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Verify and Parse Claim","time":"2023-04-24T23:05:29+07:00"}
+{"Process":"ProductService - GetById","level":"info","msg":"Product Service Invoked","time":"2023-04-24T23:05:29+07:00"}
+{"Process":"ProductHandler - GetById","level":"info","msg":"Photo Handler Invoked","time":"2023-04-24T23:05:29+07:00"}
+{"Process":"ProductService - GetById","level":"info","msg":"Product Service Invoked","time":"2023-04-24T23:05:29+07:00"}
+{"Process":"ProductHandler - GetById","level":"info","msg":"Render Response","time":"2023-04-24T23:05:29+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"Middleware Invoked","time":"2023-04-24T23:05:35+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"GET TOKEN FROM REQUEST HEADER","time":"2023-04-24T23:05:35+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Verify and Parse Claim","time":"2023-04-24T23:05:35+07:00"}
+{"Process":"ProductService - GetById","level":"info","msg":"Product Service Invoked","time":"2023-04-24T23:05:35+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"Middleware Invoked","time":"2023-04-24T23:05:45+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"GET TOKEN FROM REQUEST HEADER","time":"2023-04-24T23:05:45+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Verify and Parse Claim","time":"2023-04-24T23:05:45+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"Middleware Invoked","time":"2023-04-24T23:05:47+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"GET TOKEN FROM REQUEST HEADER","time":"2023-04-24T23:05:47+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Verify and Parse Claim","time":"2023-04-24T23:05:47+07:00"}
+{"Process":"UserHandler - Login","level":"info","msg":"User Handler Invoked","time":"2023-04-24T23:06:03+07:00"}
+{"Process":"UserHandler - Login","level":"info","msg":"Binding JSON data","time":"2023-04-24T23:06:03+07:00"}
+{"Process":"UserHandler - Register","level":"info","msg":"Hit User Service","time":"2023-04-24T23:06:03+07:00"}
+{"Process":"UserService - AuthenticateUser","level":"info","msg":"User Service Invoked","time":"2023-04-24T23:06:03+07:00"}
+{"Process":"UserService - AuthenticateUser","level":"info","msg":"Hit Repository to Get user by username","time":"2023-04-24T23:06:03+07:00"}
+{"Process":"UserService - AuthenticateUser","level":"info","msg":"Comparing Password","time":"2023-04-24T23:06:03+07:00"}
+{"Process":"UserService - AuthenticateUser","level":"info","msg":"Generating Token","time":"2023-04-24T23:06:03+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Generate JWT Invoked","time":"2023-04-24T23:06:03+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Generate Default Claim","time":"2023-04-24T23:06:03+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Generate ID Claim","time":"2023-04-24T23:06:03+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Generate Id Token","time":"2023-04-24T23:06:03+07:00"}
+{"Process":"UserHandler - Register","level":"info","msg":"rendering response User Service","time":"2023-04-24T23:06:03+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"Middleware Invoked","time":"2023-04-24T23:06:36+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"GET TOKEN FROM REQUEST HEADER","time":"2023-04-24T23:06:36+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Verify and Parse Claim","time":"2023-04-24T23:06:36+07:00"}
+{"Process":"ProductHandler - Delete","level":"info","msg":"Photo Handler Invoked","time":"2023-04-24T23:06:36+07:00"}
+{"Process":"ProductHandler - Delete","level":"info","msg":"GET ID PHOTO FROM PARAMS","time":"2023-04-24T23:06:36+07:00"}
+{"Process":"ProductHandler - Delete","level":"info","msg":"GET USERDATA FROM CTX","time":"2023-04-24T23:06:36+07:00"}
+{"Process":"ProductHandler - Delete","level":"info","msg":"HIT PHOTO SERVICE","time":"2023-04-24T23:06:36+07:00"}
+{"Process":"Product Service - Delete","level":"info","msg":"Product Service Invoked","time":"2023-04-24T23:06:36+07:00"}
+{"Process":"ProductService - Delete","level":"info","msg":"Autorisasi kepemilikan Product","time":"2023-04-24T23:06:36+07:00"}
+{"Process":"ProductService - Delete","error msg":null,"level":"error","msg":"Unauthorized","time":"2023-04-24T23:06:36+07:00"}
+{"Process":"ProductHandler - Delete","error msg":"Unauthorized","level":"error","msg":"Error WHEN HIT PHOTO SERVICE","time":"2023-04-24T23:06:36+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"Middleware Invoked","time":"2023-04-24T23:07:36+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"GET TOKEN FROM REQUEST HEADER","time":"2023-04-24T23:07:36+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Verify and Parse Claim","time":"2023-04-24T23:07:36+07:00"}
+{"Process":"ProductHandler - Delete","level":"info","msg":"Photo Handler Invoked","time":"2023-04-24T23:07:36+07:00"}
+{"Process":"ProductHandler - Delete","level":"info","msg":"GET ID PHOTO FROM PARAMS","time":"2023-04-24T23:07:36+07:00"}
+{"Process":"ProductHandler - Delete","level":"info","msg":"GET USERDATA FROM CTX","time":"2023-04-24T23:07:36+07:00"}
+{"Process":"ProductHandler - Delete","level":"info","msg":"HIT PHOTO SERVICE","time":"2023-04-24T23:07:36+07:00"}
+{"Process":"Product Service - Delete","level":"info","msg":"Product Service Invoked","time":"2023-04-24T23:07:36+07:00"}
+{"Process":"ProductService - Delete","level":"info","msg":"Autorisasi kepemilikan Product","time":"2023-04-24T23:07:36+07:00"}
+{"Process":"ProductService - Delete","level":"info","msg":"hit repository","time":"2023-04-24T23:07:36+07:00"}
+{"Process":"UserHandler - Login","level":"info","msg":"User Handler Invoked","time":"2023-04-24T23:07:57+07:00"}
+{"Process":"UserHandler - Login","level":"info","msg":"Binding JSON data","time":"2023-04-24T23:07:57+07:00"}
+{"Process":"UserHandler - Register","level":"info","msg":"Hit User Service","time":"2023-04-24T23:07:57+07:00"}
+{"Process":"UserService - AuthenticateUser","level":"info","msg":"User Service Invoked","time":"2023-04-24T23:07:57+07:00"}
+{"Process":"UserService - AuthenticateUser","level":"info","msg":"Hit Repository to Get user by username","time":"2023-04-24T23:07:57+07:00"}
+{"Process":"UserService - AuthenticateUser","level":"info","msg":"Comparing Password","time":"2023-04-24T23:07:57+07:00"}
+{"Process":"UserService - AuthenticateUser","level":"info","msg":"Generating Token","time":"2023-04-24T23:07:57+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Generate JWT Invoked","time":"2023-04-24T23:07:57+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Generate Default Claim","time":"2023-04-24T23:07:57+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Generate ID Claim","time":"2023-04-24T23:07:57+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Generate Id Token","time":"2023-04-24T23:07:57+07:00"}
+{"Process":"UserHandler - Register","level":"info","msg":"rendering response User Service","time":"2023-04-24T23:07:57+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"Middleware Invoked","time":"2023-04-24T23:08:26+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"GET TOKEN FROM REQUEST HEADER","time":"2023-04-24T23:08:26+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Verify and Parse Claim","time":"2023-04-24T23:08:26+07:00"}
+{"Process":"ProductService - GetById","level":"info","msg":"Product Service Invoked","time":"2023-04-24T23:08:26+07:00"}
+{"Process":"ProductService - GetById","error msg":"NF","level":"error","msg":"Repository Returning Error","time":"2023-04-24T23:08:26+07:00"}
+{"Process":"ProductHandler - GetById","error msg":"NF","level":"error","msg":"Error When Hit Photo Service","time":"2023-04-24T23:08:26+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"Middleware Invoked","time":"2023-04-24T23:08:36+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"GET TOKEN FROM REQUEST HEADER","time":"2023-04-24T23:08:36+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Verify and Parse Claim","time":"2023-04-24T23:08:36+07:00"}
+{"Process":"UserHandler - Login","level":"info","msg":"User Handler Invoked","time":"2023-04-25T09:36:16+07:00"}
+{"Process":"UserHandler - Login","level":"info","msg":"Binding JSON data","time":"2023-04-25T09:36:16+07:00"}
+{"Process":"UserHandler - Register","level":"info","msg":"Hit User Service","time":"2023-04-25T09:36:16+07:00"}
+{"Process":"UserService - AuthenticateUser","level":"info","msg":"User Service Invoked","time":"2023-04-25T09:36:16+07:00"}
+{"Process":"UserService - AuthenticateUser","level":"info","msg":"Hit Repository to Get user by username","time":"2023-04-25T09:36:16+07:00"}
+{"Process":"UserService - AuthenticateUser","level":"info","msg":"Comparing Password","time":"2023-04-25T09:36:16+07:00"}
+{"Process":"UserService - AuthenticateUser","level":"info","msg":"Generating Token","time":"2023-04-25T09:36:16+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Generate JWT Invoked","time":"2023-04-25T09:36:16+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Generate Default Claim","time":"2023-04-25T09:36:16+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Generate ID Claim","time":"2023-04-25T09:36:16+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Generate Id Token","time":"2023-04-25T09:36:16+07:00"}
+{"Process":"UserHandler - Register","level":"info","msg":"rendering response User Service","time":"2023-04-25T09:36:16+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"Middleware Invoked","time":"2023-04-25T09:36:35+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"GET TOKEN FROM REQUEST HEADER","time":"2023-04-25T09:36:35+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Verify and Parse Claim","time":"2023-04-25T09:36:35+07:00"}
+{"Process":"ProductHandler - Getall","level":"info","msg":"Product Handler Invoked","time":"2023-04-25T09:36:35+07:00"}
+{"Process":"ProductHandler - Getall","level":"info","msg":"Hit Product Service","time":"2023-04-25T09:36:35+07:00"}
+{"Process":"ProductService - GetAll","level":"info","msg":"Product Service Invoked","time":"2023-04-25T09:36:35+07:00"}
+{"Process":"ProductHandler - Getall","level":"info","msg":"Render Response","time":"2023-04-25T09:36:35+07:00"}
+{"Process":"UserHandler - Login","level":"info","msg":"User Handler Invoked","time":"2023-04-25T09:36:50+07:00"}
+{"Process":"UserHandler - Login","level":"info","msg":"Binding JSON data","time":"2023-04-25T09:36:50+07:00"}
+{"Process":"UserHandler - Register","level":"info","msg":"Hit User Service","time":"2023-04-25T09:36:50+07:00"}
+{"Process":"UserService - AuthenticateUser","level":"info","msg":"User Service Invoked","time":"2023-04-25T09:36:50+07:00"}
+{"Process":"UserService - AuthenticateUser","level":"info","msg":"Hit Repository to Get user by username","time":"2023-04-25T09:36:50+07:00"}
+{"Process":"UserService - AuthenticateUser","level":"info","msg":"Comparing Password","time":"2023-04-25T09:36:50+07:00"}
+{"Process":"UserService - AuthenticateUser","level":"info","msg":"Generating Token","time":"2023-04-25T09:36:51+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Generate JWT Invoked","time":"2023-04-25T09:36:51+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Generate Default Claim","time":"2023-04-25T09:36:51+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Generate ID Claim","time":"2023-04-25T09:36:51+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Generate Id Token","time":"2023-04-25T09:36:51+07:00"}
+{"Process":"UserHandler - Register","level":"info","msg":"rendering response User Service","time":"2023-04-25T09:36:51+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"Middleware Invoked","time":"2023-04-25T09:37:19+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"GET TOKEN FROM REQUEST HEADER","time":"2023-04-25T09:37:19+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Verify and Parse Claim","time":"2023-04-25T09:37:19+07:00"}
+{"Process":"ProductHandler - Getall","level":"info","msg":"Product Handler Invoked","time":"2023-04-25T09:37:19+07:00"}
+{"Process":"ProductHandler - Getall","level":"info","msg":"Hit Product Service","time":"2023-04-25T09:37:19+07:00"}
+{"Process":"ProductService - GetAll","level":"info","msg":"Product Service Invoked","time":"2023-04-25T09:37:19+07:00"}
+{"Process":"ProductHandler - Getall","level":"info","msg":"Render Response","time":"2023-04-25T09:37:19+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"Middleware Invoked","time":"2023-04-25T09:40:11+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"GET TOKEN FROM REQUEST HEADER","time":"2023-04-25T09:40:11+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Verify and Parse Claim","time":"2023-04-25T09:40:11+07:00"}
+{"Process":"ProductHandler - Getall","level":"info","msg":"Product Handler Invoked","time":"2023-04-25T09:40:11+07:00"}
+{"Process":"ProductHandler - Getall","level":"info","msg":"Hit Product Service","time":"2023-04-25T09:40:11+07:00"}
+{"Process":"ProductService - GetAll","level":"info","msg":"Product Service Invoked","time":"2023-04-25T09:40:11+07:00"}
+{"Process":"ProductHandler - Getall","level":"info","msg":"Render Response","time":"2023-04-25T09:40:11+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"Middleware Invoked","time":"2023-04-25T09:40:15+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"GET TOKEN FROM REQUEST HEADER","time":"2023-04-25T09:40:15+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Verify and Parse Claim","time":"2023-04-25T09:40:15+07:00"}
+{"Process":"ProductHandler - Getall","level":"info","msg":"Product Handler Invoked","time":"2023-04-25T09:40:15+07:00"}
+{"Process":"ProductHandler - Getall","level":"info","msg":"Hit Product Service","time":"2023-04-25T09:40:15+07:00"}
+{"Process":"ProductService - GetAll","level":"info","msg":"Product Service Invoked","time":"2023-04-25T09:40:15+07:00"}
+{"Process":"ProductHandler - Getall","level":"info","msg":"Render Response","time":"2023-04-25T09:40:15+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"Middleware Invoked","time":"2023-04-25T09:41:29+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"GET TOKEN FROM REQUEST HEADER","time":"2023-04-25T09:41:29+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Verify and Parse Claim","time":"2023-04-25T09:41:29+07:00"}
+{"Process":"ProductHandler - Getall","level":"info","msg":"Product Handler Invoked","time":"2023-04-25T09:41:29+07:00"}
+{"Process":"ProductHandler - Getall","level":"info","msg":"Hit Product Service","time":"2023-04-25T09:41:29+07:00"}
+{"Process":"ProductService - GetAll","level":"info","msg":"Product Service Invoked","time":"2023-04-25T09:41:29+07:00"}
+{"Process":"ProductHandler - Getall","level":"info","msg":"Render Response","time":"2023-04-25T09:41:29+07:00"}
+{"Process":"ProductHandler - Getall","level":"info","msg":"Render Response","time":"2023-04-25T09:41:29+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"Middleware Invoked","time":"2023-04-25T09:42:08+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"GET TOKEN FROM REQUEST HEADER","time":"2023-04-25T09:42:08+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Verify and Parse Claim","time":"2023-04-25T09:42:08+07:00"}
+{"Process":"ProductHandler - Getall","level":"info","msg":"Product Handler Invoked","time":"2023-04-25T09:42:08+07:00"}
+{"Process":"ProductHandler - Getall","level":"info","msg":"Hit Product Service","time":"2023-04-25T09:42:08+07:00"}
+{"Process":"ProductService - GetAll","level":"info","msg":"Product Service Invoked","time":"2023-04-25T09:42:08+07:00"}
+{"Process":"ProductHandler - Getall","level":"info","msg":"Render Response","time":"2023-04-25T09:42:08+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"Middleware Invoked","time":"2023-04-25T09:42:35+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"GET TOKEN FROM REQUEST HEADER","time":"2023-04-25T09:42:35+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Verify and Parse Claim","time":"2023-04-25T09:42:35+07:00"}
+{"Process":"ProductHandler - Create","level":"info","msg":"product Handler Invoked","time":"2023-04-25T09:42:35+07:00"}
+{"Process":"ProductHandler - Create","level":"info","msg":"GET product DATA FROM JSON","time":"2023-04-25T09:42:35+07:00"}
+{"Process":"ProductHandler - Create","level":"info","msg":"GET USERDATA FROM CTX","time":"2023-04-25T09:42:35+07:00"}
+{"Process":"ProductHandler - Create","level":"info","msg":"HIT product SERVICE","time":"2023-04-25T09:42:35+07:00"}
+{"Process":"ProductService - Create","level":"info","msg":"Product Service Invoked","time":"2023-04-25T09:42:35+07:00"}
+{"Process":"ProductService - Create","level":"info","msg":"Validating Process invoked","time":"2023-04-25T09:42:35+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"Middleware Invoked","time":"2023-04-25T09:42:44+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"GET TOKEN FROM REQUEST HEADER","time":"2023-04-25T09:42:44+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Verify and Parse Claim","time":"2023-04-25T09:42:44+07:00"}
+{"Process":"ProductHandler - Getall","level":"info","msg":"Product Handler Invoked","time":"2023-04-25T09:42:44+07:00"}
+{"Process":"ProductHandler - Getall","level":"info","msg":"Hit Product Service","time":"2023-04-25T09:42:44+07:00"}
+{"Process":"ProductService - GetAll","level":"info","msg":"Product Service Invoked","time":"2023-04-25T09:42:44+07:00"}
+{"Process":"ProductHandler - Getall","level":"info","msg":"Render Response","time":"2023-04-25T09:42:44+07:00"}
+{"Process":"UserHandler - Login","level":"info","msg":"User Handler Invoked","time":"2023-04-25T20:34:49+07:00"}
+{"Process":"UserHandler - Login","level":"info","msg":"Binding JSON data","time":"2023-04-25T20:34:49+07:00"}
+{"Process":"UserHandler - Register","level":"info","msg":"Hit User Service","time":"2023-04-25T20:34:49+07:00"}
+{"Process":"UserService - AuthenticateUser","level":"info","msg":"User Service Invoked","time":"2023-04-25T20:34:49+07:00"}
+{"Process":"UserService - AuthenticateUser","level":"info","msg":"Hit Repository to Get user by username","time":"2023-04-25T20:34:49+07:00"}
+{"Process":"UserService - AuthenticateUser","level":"info","msg":"Comparing Password","time":"2023-04-25T20:34:49+07:00"}
+{"Process":"UserService - AuthenticateUser","level":"info","msg":"Generating Token","time":"2023-04-25T20:34:49+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Generate JWT Invoked","time":"2023-04-25T20:34:49+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Generate Default Claim","time":"2023-04-25T20:34:49+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Generate ID Claim","time":"2023-04-25T20:34:49+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Generate Id Token","time":"2023-04-25T20:34:49+07:00"}
+{"Process":"UserHandler - Register","level":"info","msg":"rendering response User Service","time":"2023-04-25T20:34:49+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"Middleware Invoked","time":"2023-04-25T20:35:43+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"GET TOKEN FROM REQUEST HEADER","time":"2023-04-25T20:35:43+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Verify and Parse Claim","time":"2023-04-25T20:35:43+07:00"}
+{"Process":"Helper - GenerateToken","error msg":null,"level":"error","msg":"Eror When Verify Token","time":"2023-04-25T20:35:43+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"Middleware Invoked","time":"2023-04-25T20:35:53+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"GET TOKEN FROM REQUEST HEADER","time":"2023-04-25T20:35:53+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Verify and Parse Claim","time":"2023-04-25T20:35:53+07:00"}
+{"Process":"Helper - GenerateToken","error msg":null,"level":"error","msg":"Eror When Verify Token","time":"2023-04-25T20:35:53+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"Middleware Invoked","time":"2023-04-25T20:37:47+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"GET TOKEN FROM REQUEST HEADER","time":"2023-04-25T20:37:47+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Verify and Parse Claim","time":"2023-04-25T20:37:47+07:00"}
+{"Process":"Helper - GenerateToken","error msg":null,"level":"error","msg":"Eror When Verify Token","time":"2023-04-25T20:37:47+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"Middleware Invoked","time":"2023-04-25T20:37:51+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"GET TOKEN FROM REQUEST HEADER","time":"2023-04-25T20:37:51+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Verify and Parse Claim","time":"2023-04-25T20:37:51+07:00"}
+{"Process":"Helper - GenerateToken","error msg":null,"level":"error","msg":"Eror When Verify Token","time":"2023-04-25T20:37:51+07:00"}
+{"Process":"UserHandler - Login","level":"info","msg":"User Handler Invoked","time":"2023-04-25T21:33:04+07:00"}
+{"Process":"UserHandler - Login","level":"info","msg":"Binding JSON data","time":"2023-04-25T21:33:04+07:00"}
+{"Process":"UserHandler - Register","level":"info","msg":"Hit User Service","time":"2023-04-25T21:33:04+07:00"}
+{"Process":"UserService - AuthenticateUser","level":"info","msg":"User Service Invoked","time":"2023-04-25T21:33:04+07:00"}
+{"Process":"UserService - AuthenticateUser","level":"info","msg":"Hit Repository to Get user by username","time":"2023-04-25T21:33:04+07:00"}
+{"Process":"UserService - AuthenticateUser","level":"info","msg":"Comparing Password","time":"2023-04-25T21:33:04+07:00"}
+{"Process":"UserService - AuthenticateUser","level":"info","msg":"Generating Token","time":"2023-04-25T21:33:04+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Generate JWT Invoked","time":"2023-04-25T21:33:04+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Generate Default Claim","time":"2023-04-25T21:33:04+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Generate ID Claim","time":"2023-04-25T21:33:04+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Generate Id Token","time":"2023-04-25T21:33:04+07:00"}
+{"Process":"UserHandler - Register","level":"info","msg":"rendering response User Service","time":"2023-04-25T21:33:04+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"Middleware Invoked","time":"2023-04-25T21:33:24+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"GET TOKEN FROM REQUEST HEADER","time":"2023-04-25T21:33:24+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Verify and Parse Claim","time":"2023-04-25T21:33:24+07:00"}
+{"Process":"ProductHandler - Getall","level":"info","msg":"Product Handler Invoked","time":"2023-04-25T21:33:24+07:00"}
+{"Process":"ProductHandler - Getall","level":"info","msg":"Hit Product Service","time":"2023-04-25T21:33:24+07:00"}
+{"Process":"ProductService - GetAll","level":"info","msg":"Product Service Invoked","time":"2023-04-25T21:33:24+07:00"}
+{"Process":"ProductHandler - Getall","level":"info","msg":"Render Response","time":"2023-04-25T21:33:24+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"Middleware Invoked","time":"2023-04-25T21:33:40+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"GET TOKEN FROM REQUEST HEADER","time":"2023-04-25T21:33:40+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Verify and Parse Claim","time":"2023-04-25T21:33:40+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"Middleware Invoked","time":"2023-04-25T21:33:42+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"GET TOKEN FROM REQUEST HEADER","time":"2023-04-25T21:33:42+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Verify and Parse Claim","time":"2023-04-25T21:33:42+07:00"}
+{"Process":"UserHandler - Login","level":"info","msg":"User Handler Invoked","time":"2023-04-25T21:34:03+07:00"}
+{"Process":"UserHandler - Login","level":"info","msg":"Binding JSON data","time":"2023-04-25T21:34:03+07:00"}
+{"Process":"UserHandler - Register","level":"info","msg":"Hit User Service","time":"2023-04-25T21:34:03+07:00"}
+{"Process":"UserService - AuthenticateUser","level":"info","msg":"User Service Invoked","time":"2023-04-25T21:34:03+07:00"}
+{"Process":"UserService - AuthenticateUser","level":"info","msg":"Hit Repository to Get user by username","time":"2023-04-25T21:34:03+07:00"}
+{"Process":"UserService - AuthenticateUser","level":"info","msg":"Comparing Password","time":"2023-04-25T21:34:03+07:00"}
+{"Process":"UserService - AuthenticateUser","level":"info","msg":"Generating Token","time":"2023-04-25T21:34:03+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Generate JWT Invoked","time":"2023-04-25T21:34:03+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Generate Default Claim","time":"2023-04-25T21:34:03+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Generate ID Claim","time":"2023-04-25T21:34:03+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Generate Id Token","time":"2023-04-25T21:34:03+07:00"}
+{"Process":"UserHandler - Register","level":"info","msg":"rendering response User Service","time":"2023-04-25T21:34:03+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"Middleware Invoked","time":"2023-04-25T21:34:22+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"GET TOKEN FROM REQUEST HEADER","time":"2023-04-25T21:34:22+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Verify and Parse Claim","time":"2023-04-25T21:34:22+07:00"}
+{"Process":"ProductHandler - Getall","level":"info","msg":"Product Handler Invoked","time":"2023-04-25T21:34:22+07:00"}
+{"Process":"ProductHandler - Getall","level":"info","msg":"Hit Product Service","time":"2023-04-25T21:34:22+07:00"}
+{"Process":"ProductService - GetAll","level":"info","msg":"Product Service Invoked","time":"2023-04-25T21:34:22+07:00"}
+{"Process":"ProductHandler - Getall","level":"info","msg":"Render Response","time":"2023-04-25T21:34:22+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"Middleware Invoked","time":"2023-04-25T21:34:31+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"GET TOKEN FROM REQUEST HEADER","time":"2023-04-25T21:34:31+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Verify and Parse Claim","time":"2023-04-25T21:34:31+07:00"}
+{"Process":"ProductHandler - Delete","level":"info","msg":"product Handler Invoked","time":"2023-04-25T21:34:31+07:00"}
+{"Process":"ProductHandler - Delete","level":"info","msg":"GET ID product FROM PARAMS","time":"2023-04-25T21:34:31+07:00"}
+{"Process":"ProductHandler - Delete","level":"info","msg":"GET USERDATA FROM CTX","time":"2023-04-25T21:34:31+07:00"}
+{"Process":"ProductHandler - Delete","level":"info","msg":"HIT product SERVICE","time":"2023-04-25T21:34:31+07:00"}
+{"Process":"Product Service - Delete","level":"info","msg":"Product Service Invoked","time":"2023-04-25T21:34:31+07:00"}
+{"Process":"ProductService - Delete","level":"info","msg":"Autorisasi kepemilikan Product","time":"2023-04-25T21:34:31+07:00"}
+{"Process":"ProductService - Delete","level":"info","msg":"hit repository","time":"2023-04-25T21:34:31+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"Middleware Invoked","time":"2023-04-25T21:34:40+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"GET TOKEN FROM REQUEST HEADER","time":"2023-04-25T21:34:40+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Verify and Parse Claim","time":"2023-04-25T21:34:40+07:00"}
+{"Process":"ProductService - GetById","level":"info","msg":"Product Service Invoked","time":"2023-04-25T21:34:40+07:00"}
+{"Process":"ProductService - GetById","error msg":"Data is Not Found","level":"error","msg":"Repository Returning Error","time":"2023-04-25T21:34:40+07:00"}
+{"Process":"ProductHandler - GetById","error msg":"Data is Not Found","level":"error","msg":"Error When Hit Photo Service","time":"2023-04-25T21:34:40+07:00"}
+{"Process":"UserHandler - Login","level":"info","msg":"User Handler Invoked","time":"2023-04-25T21:34:54+07:00"}
+{"Process":"UserHandler - Login","level":"info","msg":"Binding JSON data","time":"2023-04-25T21:34:54+07:00"}
+{"Process":"UserHandler - Register","level":"info","msg":"Hit User Service","time":"2023-04-25T21:34:54+07:00"}
+{"Process":"UserService - AuthenticateUser","level":"info","msg":"User Service Invoked","time":"2023-04-25T21:34:54+07:00"}
+{"Process":"UserService - AuthenticateUser","level":"info","msg":"Hit Repository to Get user by username","time":"2023-04-25T21:34:54+07:00"}
+{"Process":"UserService - AuthenticateUser","level":"info","msg":"Comparing Password","time":"2023-04-25T21:34:54+07:00"}
+{"Process":"UserService - AuthenticateUser","level":"info","msg":"Generating Token","time":"2023-04-25T21:34:54+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Generate JWT Invoked","time":"2023-04-25T21:34:54+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Generate Default Claim","time":"2023-04-25T21:34:54+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Generate ID Claim","time":"2023-04-25T21:34:54+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Generate Id Token","time":"2023-04-25T21:34:54+07:00"}
+{"Process":"UserHandler - Register","level":"info","msg":"rendering response User Service","time":"2023-04-25T21:34:54+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"Middleware Invoked","time":"2023-04-25T21:35:14+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"GET TOKEN FROM REQUEST HEADER","time":"2023-04-25T21:35:14+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Verify and Parse Claim","time":"2023-04-25T21:35:14+07:00"}
+{"Process":"ProductHandler - Getall","level":"info","msg":"Product Handler Invoked","time":"2023-04-25T21:35:14+07:00"}
+{"Process":"ProductHandler - Getall","level":"info","msg":"Hit Product Service","time":"2023-04-25T21:35:14+07:00"}
+{"Process":"ProductService - GetAll","level":"info","msg":"Product Service Invoked","time":"2023-04-25T21:35:14+07:00"}
+{"Process":"ProductHandler - Getall","level":"info","msg":"Render Response","time":"2023-04-25T21:35:14+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"Middleware Invoked","time":"2023-04-25T21:35:24+07:00"}
+{"Process":"Middleware - JWTMiddleware","level":"info","msg":"GET TOKEN FROM REQUEST HEADER","time":"2023-04-25T21:35:24+07:00"}
+{"Process":"Helper - GenerateToken","level":"info","msg":"Starting Verify and Parse Claim","time":"2023-04-25T21:35:24+07:00"}
+{"Process":"ProductService - GetById","level":"info","msg":"Product Service Invoked","time":"2023-04-25T21:35:24+07:00"}
+{"Process":"ProductService - GetById","error msg":"Data is Not Found","level":"error","msg":"Repository Returning Error","time":"2023-04-25T21:35:24+07:00"}
+{"Process":"ProductHandler - GetById","error msg":"Data is Not Found","level":"error","msg":"Error When Hit Photo Service","time":"2023-04-25T21:35:24+07:00"}

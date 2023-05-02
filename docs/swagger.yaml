@@ -1,0 +1,296 @@
+basePath: /api/v1
+definitions:
+  gorm.DeletedAt:
+    properties:
+      time:
+        type: string
+      valid:
+        description: Valid is true if Time is not NULL
+        type: boolean
+    type: object
+  product.Product:
+    properties:
+      created_at:
+        type: string
+      deletedAt:
+        $ref: '#/definitions/gorm.DeletedAt'
+      description:
+        type: string
+      id:
+        type: integer
+      title:
+        type: string
+      updated_at:
+        type: string
+      user_id:
+        type: integer
+    type: object
+  product.ProductCreateRequest:
+    properties:
+      description:
+        type: string
+      title:
+        type: string
+    type: object
+  reponse.WebResponseFailed:
+    properties:
+      error:
+        type: string
+      message:
+        type: string
+    type: object
+  reponse.WebResponseSuccess:
+    properties:
+      data: {}
+      message:
+        type: string
+    type: object
+  token.Tokens:
+    properties:
+      access_token:
+        type: string
+    type: object
+  user.UserAuthenticate:
+    properties:
+      password:
+        type: string
+      username:
+        type: string
+    type: object
+  user.UserCreateRequest:
+    properties:
+      age:
+        type: integer
+      email:
+        type: string
+      password:
+        type: string
+      role:
+        type: string
+      username:
+        type: string
+    type: object
+  user.UserCreateResponse:
+    properties:
+      Username:
+        type: string
+      age:
+        type: integer
+      email:
+        type: string
+    type: object
+host: localhost:9999
+info:
+  contact: {}
+paths:
+  /product/createproduct:
+    post:
+      consumes:
+      - application/json
+      description: how to Create product
+      parameters:
+      - description: Input Data product
+        in: body
+        name: request
+        required: true
+        schema:
+          $ref: '#/definitions/product.ProductCreateRequest'
+      produces:
+      - application/json
+      responses:
+        "201":
+          description: Created
+          schema:
+            allOf:
+            - $ref: '#/definitions/reponse.WebResponseSuccess'
+            - properties:
+                data:
+                  $ref: '#/definitions/product.Product'
+              type: object
+      security:
+      - Bearer: []
+      summary: create product example
+      tags:
+      - products
+  /product/deleteproduct/{id}:
+    delete:
+      consumes:
+      - application/json
+      description: how to Delete product
+      parameters:
+      - description: id product
+        in: path
+        name: id
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/reponse.WebResponseSuccess'
+      security:
+      - Bearer: []
+      summary: delete product example
+      tags:
+      - products
+  /product/getall:
+    get:
+      consumes:
+      - application/json
+      description: how to get all Product
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/reponse.WebResponseSuccess'
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/product.Product'
+                  type: array
+              type: object
+      security:
+      - Bearer: []
+      summary: Get All Product example
+      tags:
+      - products
+  /product/getone/{id}:
+    get:
+      consumes:
+      - application/json
+      description: how to get product
+      parameters:
+      - description: id product
+        in: path
+        name: id
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/reponse.WebResponseSuccess'
+            - properties:
+                data:
+                  $ref: '#/definitions/product.Product'
+              type: object
+      security:
+      - Bearer: []
+      summary: Get product example
+      tags:
+      - products
+  /product/updateproduct/{id}:
+    put:
+      consumes:
+      - application/json
+      description: how to update product
+      parameters:
+      - description: id product
+        in: path
+        name: id
+        type: integer
+      - description: Input Data product
+        in: body
+        name: request
+        required: true
+        schema:
+          $ref: '#/definitions/product.ProductCreateRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/reponse.WebResponseSuccess'
+            - properties:
+                data:
+                  $ref: '#/definitions/product.Product'
+              type: object
+      security:
+      - Bearer: []
+      summary: update product example
+      tags:
+      - products
+  /user/login:
+    post:
+      consumes:
+      - application/json
+      description: do login
+      parameters:
+      - description: Login User
+        in: body
+        name: request
+        required: true
+        schema:
+          $ref: '#/definitions/user.UserAuthenticate'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/reponse.WebResponseSuccess'
+            - properties:
+                data:
+                  $ref: '#/definitions/token.Tokens'
+              type: object
+        "400":
+          description: Input tidak valid
+          schema:
+            $ref: '#/definitions/reponse.WebResponseFailed'
+        "500":
+          description: Error Server Side
+          schema:
+            $ref: '#/definitions/reponse.WebResponseFailed'
+      summary: Login example
+      tags:
+      - user
+  /user/register:
+    post:
+      consumes:
+      - application/json
+      description: do register
+      parameters:
+      - description: Input Data User
+        in: body
+        name: request
+        required: true
+        schema:
+          $ref: '#/definitions/user.UserCreateRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/reponse.WebResponseSuccess'
+            - properties:
+                data:
+                  $ref: '#/definitions/user.UserCreateResponse'
+              type: object
+        "400":
+          description: Input tidak valid
+          schema:
+            $ref: '#/definitions/reponse.WebResponseFailed'
+        "500":
+          description: Error Server Side
+          schema:
+            $ref: '#/definitions/reponse.WebResponseFailed'
+      summary: Register example
+      tags:
+      - user
+securityDefinitions:
+  Bearer:
+    in: header
+    name: Authorization
+    type: apiKey
+swagger: "2.0"
