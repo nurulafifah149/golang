@@ -1,0 +1,628 @@
+basePath: /api/v1
+definitions:
+  comment.Comment:
+    properties:
+      created_at:
+        type: string
+      deletedAt:
+        $ref: '#/definitions/gorm.DeletedAt'
+      id:
+        type: integer
+      message:
+        type: string
+      photo_id:
+        type: integer
+      updated_at:
+        type: string
+      user_id:
+        type: integer
+    required:
+    - message
+    type: object
+  comment.CommentCreateRequest:
+    properties:
+      message:
+        type: string
+      photo_id:
+        type: integer
+    type: object
+  gorm.DeletedAt:
+    properties:
+      time:
+        type: string
+      valid:
+        description: Valid is true if Time is not NULL
+        type: boolean
+    type: object
+  photo.Photo:
+    properties:
+      caption:
+        type: string
+      comments:
+        items:
+          $ref: '#/definitions/comment.Comment'
+        type: array
+      created_at:
+        type: string
+      deletedAt:
+        $ref: '#/definitions/gorm.DeletedAt'
+      id:
+        type: integer
+      photo_url:
+        type: string
+      title:
+        type: string
+      updated_at:
+        type: string
+      user_id:
+        type: integer
+    required:
+    - photo_url
+    - title
+    type: object
+  photo.PhotoCreateRequest:
+    properties:
+      caption:
+        type: string
+      photo_url:
+        type: string
+      title:
+        type: string
+    type: object
+  reponse.WebResponseFailed:
+    properties:
+      error:
+        type: string
+      message:
+        type: string
+    type: object
+  reponse.WebResponseSuccess:
+    properties:
+      data: {}
+      message:
+        type: string
+    type: object
+  socialmedia.Socialmedia:
+    properties:
+      created_at:
+        type: string
+      deletedAt:
+        $ref: '#/definitions/gorm.DeletedAt'
+      id:
+        type: integer
+      name:
+        type: string
+      social_media_url:
+        type: string
+      updated_at:
+        type: string
+      user_id:
+        type: integer
+    required:
+    - name
+    - social_media_url
+    type: object
+  socialmedia.SocialmediaCreateRequest:
+    properties:
+      name:
+        type: string
+      social_media_url:
+        type: string
+    type: object
+  token.Tokens:
+    properties:
+      access_token:
+        type: string
+    type: object
+  user.UserAuthenticate:
+    properties:
+      password:
+        type: string
+      username:
+        type: string
+    type: object
+  user.UserCreateRequest:
+    properties:
+      age:
+        type: integer
+      email:
+        type: string
+      password:
+        type: string
+      username:
+        type: string
+    type: object
+  user.UserCreateResponse:
+    properties:
+      Username:
+        type: string
+      age:
+        type: integer
+      email:
+        type: string
+    type: object
+host: localhost:9999
+info:
+  contact: {}
+paths:
+  /comment/createcomment:
+    post:
+      consumes:
+      - application/json
+      description: how to Create Comment
+      parameters:
+      - description: Input Data Comment
+        in: body
+        name: request
+        required: true
+        schema:
+          $ref: '#/definitions/comment.CommentCreateRequest'
+      produces:
+      - application/json
+      responses:
+        "201":
+          description: Created
+          schema:
+            allOf:
+            - $ref: '#/definitions/reponse.WebResponseSuccess'
+            - properties:
+                data:
+                  $ref: '#/definitions/comment.Comment'
+              type: object
+      security:
+      - Bearer: []
+      summary: create Comment example
+      tags:
+      - Comments
+  /comment/deletecomment/{id}:
+    delete:
+      consumes:
+      - application/json
+      description: how to Delete Comment
+      parameters:
+      - description: id Comment
+        in: path
+        name: id
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/reponse.WebResponseSuccess'
+      security:
+      - Bearer: []
+      summary: delete Comment example
+      tags:
+      - Comments
+  /comment/getall:
+    get:
+      consumes:
+      - application/json
+      description: how to get all Comment
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/reponse.WebResponseSuccess'
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/comment.Comment'
+                  type: array
+              type: object
+      security:
+      - Bearer: []
+      summary: Get All Comment example
+      tags:
+      - Comments
+  /comment/getone/{id}:
+    get:
+      consumes:
+      - application/json
+      description: how to get Comment
+      parameters:
+      - description: id photo
+        in: path
+        name: id
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/reponse.WebResponseSuccess'
+            - properties:
+                data:
+                  $ref: '#/definitions/comment.Comment'
+              type: object
+      security:
+      - Bearer: []
+      summary: Get Comment example
+      tags:
+      - Comments
+  /comment/updatecomment/{id}:
+    put:
+      consumes:
+      - application/json
+      description: how to update Comment
+      parameters:
+      - description: Id Comment
+        in: path
+        name: id
+        type: integer
+      - description: Input Data Comment
+        in: body
+        name: request
+        required: true
+        schema:
+          $ref: '#/definitions/comment.CommentCreateRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/reponse.WebResponseSuccess'
+            - properties:
+                data:
+                  $ref: '#/definitions/comment.Comment'
+              type: object
+      security:
+      - Bearer: []
+      summary: update Comment example
+      tags:
+      - Comments
+  /photo/createphoto:
+    post:
+      consumes:
+      - application/json
+      description: how to Create photo
+      parameters:
+      - description: Input Data Photo
+        in: body
+        name: request
+        required: true
+        schema:
+          $ref: '#/definitions/photo.PhotoCreateRequest'
+      produces:
+      - application/json
+      responses:
+        "201":
+          description: Created
+          schema:
+            allOf:
+            - $ref: '#/definitions/reponse.WebResponseSuccess'
+            - properties:
+                data:
+                  $ref: '#/definitions/photo.Photo'
+              type: object
+      security:
+      - Bearer: []
+      summary: create Photo example
+      tags:
+      - Photos
+  /photo/deletephoto/{id}:
+    delete:
+      consumes:
+      - application/json
+      description: how to Delete photo
+      parameters:
+      - description: id Photo
+        in: path
+        name: id
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/reponse.WebResponseSuccess'
+      security:
+      - Bearer: []
+      summary: delete Photo example
+      tags:
+      - Photos
+  /photo/getall:
+    get:
+      consumes:
+      - application/json
+      description: how to get all Photo
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/reponse.WebResponseSuccess'
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/photo.Photo'
+                  type: array
+              type: object
+      security:
+      - Bearer: []
+      summary: Get All Photo example
+      tags:
+      - Photos
+  /photo/getone/{id}:
+    get:
+      consumes:
+      - application/json
+      description: how to get Photo
+      parameters:
+      - description: id photo
+        in: path
+        name: id
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/reponse.WebResponseSuccess'
+            - properties:
+                data:
+                  $ref: '#/definitions/photo.Photo'
+              type: object
+      security:
+      - Bearer: []
+      summary: Get Photo example
+      tags:
+      - Photos
+  /photo/updatephoto/{id}:
+    put:
+      consumes:
+      - application/json
+      description: how to update photo
+      parameters:
+      - description: id photo
+        in: path
+        name: id
+        type: integer
+      - description: Input Data Photo
+        in: body
+        name: request
+        required: true
+        schema:
+          $ref: '#/definitions/photo.PhotoCreateRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/reponse.WebResponseSuccess'
+            - properties:
+                data:
+                  $ref: '#/definitions/photo.Photo'
+              type: object
+      security:
+      - Bearer: []
+      summary: update Photo example
+      tags:
+      - Photos
+  /socialmedia/createsocialmedia/:
+    post:
+      consumes:
+      - application/json
+      description: how to create social media
+      parameters:
+      - description: Input Data Social Media
+        in: body
+        name: request
+        required: true
+        schema:
+          $ref: '#/definitions/socialmedia.SocialmediaCreateRequest'
+      produces:
+      - application/json
+      responses:
+        "201":
+          description: Created
+          schema:
+            allOf:
+            - $ref: '#/definitions/reponse.WebResponseSuccess'
+            - properties:
+                data:
+                  $ref: '#/definitions/socialmedia.Socialmedia'
+              type: object
+      security:
+      - Bearer: []
+      summary: Create Social Media example
+      tags:
+      - Social Media
+  /socialmedia/deleteocialmedia/{id}:
+    delete:
+      consumes:
+      - application/json
+      description: how to delete social media
+      parameters:
+      - description: id social media
+        in: path
+        name: id
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/reponse.WebResponseSuccess'
+      security:
+      - Bearer: []
+      summary: Delete Social Media example
+      tags:
+      - Social Media
+  /socialmedia/getall:
+    get:
+      consumes:
+      - application/json
+      description: how to get all social media
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/reponse.WebResponseSuccess'
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/socialmedia.Socialmedia'
+                  type: array
+              type: object
+      security:
+      - Bearer: []
+      summary: Get All Social Media example
+      tags:
+      - Social Media
+  /socialmedia/getone/{id}:
+    get:
+      consumes:
+      - application/json
+      description: how to get social media
+      parameters:
+      - description: id social media
+        in: path
+        name: id
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/reponse.WebResponseSuccess'
+            - properties:
+                data:
+                  $ref: '#/definitions/socialmedia.Socialmedia'
+              type: object
+      security:
+      - Bearer: []
+      summary: Get Social Media example
+      tags:
+      - Social Media
+  /socialmedia/updatesocialmedia/{id}:
+    put:
+      consumes:
+      - application/json
+      description: how to update social media
+      parameters:
+      - description: id social media
+        in: path
+        name: id
+        type: integer
+      - description: Input Data User
+        in: body
+        name: request
+        required: true
+        schema:
+          $ref: '#/definitions/socialmedia.SocialmediaCreateRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/reponse.WebResponseSuccess'
+            - properties:
+                data:
+                  $ref: '#/definitions/socialmedia.Socialmedia'
+              type: object
+      security:
+      - Bearer: []
+      summary: update Social Media example
+      tags:
+      - Social Media
+  /user/login:
+    post:
+      consumes:
+      - application/json
+      description: do login
+      parameters:
+      - description: Login User
+        in: body
+        name: request
+        required: true
+        schema:
+          $ref: '#/definitions/user.UserAuthenticate'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/reponse.WebResponseSuccess'
+            - properties:
+                data:
+                  $ref: '#/definitions/token.Tokens'
+              type: object
+        "400":
+          description: Input tidak valid
+          schema:
+            $ref: '#/definitions/reponse.WebResponseFailed'
+        "500":
+          description: Error Server Side
+          schema:
+            $ref: '#/definitions/reponse.WebResponseFailed'
+      summary: Login example
+      tags:
+      - user
+  /user/register:
+    post:
+      consumes:
+      - application/json
+      description: do register
+      parameters:
+      - description: Input Data User
+        in: body
+        name: request
+        required: true
+        schema:
+          $ref: '#/definitions/user.UserCreateRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/reponse.WebResponseSuccess'
+            - properties:
+                data:
+                  $ref: '#/definitions/user.UserCreateResponse'
+              type: object
+        "400":
+          description: Input tidak valid
+          schema:
+            $ref: '#/definitions/reponse.WebResponseFailed'
+        "500":
+          description: Error Server Side
+          schema:
+            $ref: '#/definitions/reponse.WebResponseFailed'
+      summary: Register example
+      tags:
+      - user
+securityDefinitions:
+  Bearer:
+    in: header
+    name: Authorization
+    type: apiKey
+swagger: "2.0"

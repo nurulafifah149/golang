@@ -1,0 +1,18 @@
+server:
+  name: mygram
+  env: local
+  http:
+    port: 8080
+dataSource:
+  mode: GORM
+  migrate: true
+  postgres:
+    master:
+      Host: localhost
+      Port: 5432
+      DBName: mygram
+      Username: postgres
+      Password: 123456
+      maxIdleConnection: 10
+      maxOpenConnection: 10
+      maxIdleTime: 10
