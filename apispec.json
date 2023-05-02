@@ -1,0 +1,249 @@
+{
+    "openapi": "3.0.3",
+    "info": {
+        "title": "BOOK RESTful API",
+        "description": "API Spec for Book",
+        "version": "1.0.0"
+    },
+    "servers": [
+        {
+            "url": "http://127.0.0.1:9090/api/v1"
+        }
+    ],
+    "paths": {
+        "/book":{
+            "get":{
+                "summary": "Get All Book",
+                "tags": ["Book API"],
+                "description": "List of all Book",
+                "responses":{
+                    "200": {
+                        "description": "Success Get List of all book",
+                        "content": {
+                            "application/json" : {
+                                "schema" : {
+                                    "type" :"object",
+                                    "properties": {
+                                        "message":{
+                                            "type":"string"
+                                        },
+                                        "data" : {
+                                            "type":"array",
+                                            "items":{
+                                                "$ref": "#/components/schemas/Book"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "post":{
+                "security": [
+                    {
+                        "BookAuth": []
+                    }
+                ],
+                "summary": "Create New Book",
+                "tags": ["Book API"],
+                "requestBody": {
+                    "content": {
+                        "application/json" :{
+                            "schema":{
+                                "$ref": "#/components/schemas/CreateOrUpdateBook"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "201": {
+                        "description": "Success Create Book",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "message": {
+                                            "type": "string"
+                                        },
+                                        "data": {
+                                            "$ref": "#/components/schemas/Book"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/book/{BookId}": {
+            "get":{
+                "summary": "Get Book by ID",
+                "tags": ["Book API"],
+                "description": "Get Book by Id",
+                "parameters": [
+                    {
+                        "name": "BookId",
+                        "in": "path",
+                        "required": true,
+                        "description": "Book Id"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Succes get Book",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "message": {
+                                            "type": "string"
+                                        },
+                                        "data": {
+                                            "$ref": "#/components/schemas/Book"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "put": {
+                "security": [
+                    {
+                        "BookAuth": []
+                    }
+                ],
+                "summary": "Update Book by ID",
+                "tags":["Book API"],
+                "description": "Update Book by Id",
+                "parameters": [
+                    {
+                        "name": "BookId",
+                        "in": "path",
+                        "required": true,
+                        "description": "Book Id"
+                    }
+                ],
+                "requestBody":{
+                    "content": {
+                        "application/json" :{
+                            "schema": {
+                                "$ref": "#/components/schemas/CreateOrUpdateBook"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200":{
+                        "description": "Success Update Book",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "message": {
+                                            "type": "string"
+                                        },
+                                        "data": {
+                                            "type": "object",
+                                            "nullable": true
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "security": [
+                    {
+                        "BookAuth": []
+                    }
+                ],
+                "summary": "Delete Book by ID",
+                "tags": ["Book API"],
+                "description": "Delete Book by Id",
+                "parameters": [
+                    {
+                        "name": "BookId",
+                        "in": "path",
+                        "required": true,
+                        "description": "Book Id"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Succes Delete Book",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "message": {
+                                            "type": "string"
+                                        },
+                                        "data":{
+                                            "type": "object",
+                                            "nullable": true
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "securitySchemes": {
+            "BookAuth": {
+                "type": "http",
+                "scheme": "bearer",
+                "bearerFormat": "JWT",
+                "description": "Authentication for API"
+            }
+        },
+        "schemas": {
+            "CreateOrUpdateBook": {
+                "type": "object",
+                "properties": {
+                    "title" : {
+                        "type":"string"
+                    },
+                    "author": {
+                        "type": "string"
+                    },
+                    "desc" : {
+                        "type": "number"
+                    }
+                }
+            },
+            "Book": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "number"
+                    },
+                    "title": {
+                        "type": "string"
+                    },
+                    "author": {
+                        "type": "string"
+                    }
+                    ,
+                    "desc": {
+                        "type": "integer"
+                    }
+                }
+            }
+        }
+    }
+}
